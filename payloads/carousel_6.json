@@ -1,0 +1,195 @@
+{
+  "carousel_id": 6,
+  "text_operations": [
+    {
+      "type": "update_title",
+      "title": "14.09.26 - 6"
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBXKvc9WHMF2pStF-LBYyfNb2hnYbXzW2",
+      "text": "КОНЕЦ ИГРЫ: Слова, после которых женщина мгновенно осознает ценность твоих границ"
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
+      "text": "Уважение — это не награда\nУважение — это не бонус за примерное поведение и не приз, который мужчина должен заслуживать. Это базовый, не подлежащий обсуждению порог входа в любые отношения. Если этого фундамента нет изначально, то все дальнейшие попытки выстроить диалог не имеют никакого смысла."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBYR9b5mqCw63srK-LBDsPG3BTLsWsHf4",
+      "text": "Свобода действий и твои выводы\nТы вольна поступать так, как считаешь нужным. Я не собираюсь контролировать каждый твой шаг, устраивать сцены ревности или диктовать свои правила. Но помни: твои поступки — это твой выбор, а мои выводы из них — это мое законное право. И с этими выводениями дальше жить мне."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBYR9b5mqCw63srK-LBDsPG3BTLsWsHf4",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBCpBj1RSBLDv6Gn-LBPzl1zdT2DXssh1",
+      "text": "Прощай, иллюзии\nЯ перестал злиться, вступать в бесконечные споры и доказывать свою правоту. На это уходит слишком много ценного ресурса. Теперь я просто молча наблюдаю. Когда спадает эмоциональный шум, люди показывают свое истинное лицо. И я принимаю эту реальность такой, какая она есть."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBCpBj1RSBLDv6Gn-LBPzl1zdT2DXssh1",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBtDh7gBKWzF5tCJ-LB0FvgjhkDM2v3Lp",
+      "text": "Тихая чистка пространства\nМне больше не нужны громкие выяснения отношений и драматичные прощания. Если я вижу пренебрежение, манипуляции или холод — я просто без лишних слов убираю человека из своей жизни. Без злости и обид, с полным пониманием того, что наши пути разошлись."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBtDh7gBKWzF5tCJ-LB0FvgjhkDM2v3Lp",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBSD56NpD8Z65xrv-LBwP3399V5TBSrtP",
+      "text": "Время ожиданий завершено\nЯ больше не тот мужчина, который будет сидеть у телефона, терпеливо ждать перемен, надеяться на чудо и слепо верить красивым обещаниям. Мое время стоит слишком дорого, чтобы тратить его на черновики чужих жизней и бесконечные шансы на исправление."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBSD56NpD8Z65xrv-LBwP3399V5TBSrtP",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBkdxZtbndDn9W8w-LBFF9WCdYpPKX78V",
+      "text": "Сила непоколебимой позиции\nКогда ты спокойно и уверенно обозначаешь свои границы, не пытаясь никого переделать, происходит удивительное. Женщина мгновенно чувствует твою внутреннюю силу и понимает: с этим мужчиной манипуляции не пройдут, его невозможно прогнуть, его можно только потерять."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBkdxZtbndDn9W8w-LBFF9WCdYpPKX78V",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
+      "text": "Стань хозяином своей реальности\nТвердость характера привлекает сильнее любых ухаживаний. Научись ценить себя так, чтобы твои границы уважали без лишних слов.\n\nПодписывайся на @vitali_rapeika. Здесь мы разбираем жесткую психологию отношений, личные границы и принципы сильного позиционирования"
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "PBXKvc9WHMF2pStF",
+      "page_number": 1,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBbHwq2nRppzN66r",
+      "page_number": 2,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBYR9b5mqCw63srK",
+      "page_number": 3,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBCpBj1RSBLDv6Gn",
+      "page_number": 4,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBtDh7gBKWzF5tCJ",
+      "page_number": 5,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBSD56NpD8Z65xrv",
+      "page_number": 6,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBkdxZtbndDn9W8w",
+      "page_number": 7,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBnl4PhMp6SZldZc",
+      "page_number": 8,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    }
+  ]
+}

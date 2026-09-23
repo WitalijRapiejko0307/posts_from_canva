@@ -1,0 +1,195 @@
+{
+  "carousel_id": 8,
+  "text_operations": [
+    {
+      "type": "update_title",
+      "title": "14.09.26 - 8"
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBXKvc9WHMF2pStF-LBYyfNb2hnYbXzW2",
+      "text": "ЗАКАЛЕННЫЙ ХАРАКТЕР: Как выглядит человек, который прошел через ад, выжил и перестроил себя с нуля"
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
+      "text": "Ярость как точка старта\nСамый сильный мужской поступок — это способность искренне разозлиться на себя за слитый потенциал и на этой чистой, праведной ярости пересобрать свою реальность. Человек, которого жизнь пыталась сломать, но не смогла, приобретает совершенно иную природу и уникальные маркеры силы."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBYR9b5mqCw63srK-LBDsPG3BTLsWsHf4",
+      "text": "Бетонное спокойствие\nЕго хладнокровие рождено не медитациями, аффирмациями или дыхательными практиками. Он просто прошел через такие испытания, после которых большинство ломается навсегда. На фоне пережитого прошлых катастроф любые текущие проблемы кажутся ему лишь мелкими задачами. Он не суетится."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBYR9b5mqCw63srK-LBDsPG3BTLsWsHf4",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBCpBj1RSBLDv6Gn-LBPzl1zdT2DXssh1",
+      "text": "Вес каждого слова\nОн говорит мало и исключительно по делу. Не из-за зажатости или скрытности, а потому что знает истинную цену словам. Пока слабые люди бросаются громкими обещаниями, оправданиями или пустыми угрозами, он молча делает то, что должен, позволяя результатам говорить за себя."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBCpBj1RSBLDv6Gn-LBPzl1zdT2DXssh1",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBtDh7gBKWzF5tCJ-LB0FvgjhkDM2v3Lp",
+      "text": "Бескомпромиссный фильтр окружения\nУ него работает жесткий отбор людей. Он мгновенно считывает нытиков, манипуляторов и скрытых паразитов. Побывав на самом дне, он на уровне инстинктов чувствует, кто тянет его обратно в болото, а кто обладает достаточной силой, чтобы стоять плечом к плечу в любой шторм."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBtDh7gBKWzF5tCJ-LB0FvgjhkDM2v3Lp",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBSD56NpD8Z65xrv-LBwP3399V5TBSrtP",
+      "text": "Иммунитет к потерям\nОн больше не боится лишиться работы, денег или привычных отношений. Не из-за безразличия, а потому что уже терял абсолютно все и находил в себе силы подняться с колен. Когда ты выживал на голом упрямстве, очередной кризис или расставание перестают казаться концом света."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBSD56NpD8Z65xrv-LBwP3399V5TBSrtP",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBkdxZtbndDn9W8w-LBFF9WCdYpPKX78V",
+      "text": "Тихая внутренняя опора\nВ нем чувствуется тяжелая, монолитная сила. Она не показная, без дешевых понтов и пафосных цитат. Это сила мужчины, который в самые темные ночи держал себя в руках исключительно за счет силы воли, не позволяя себе сойти с ума, когда весь его мир рушился на части."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBkdxZtbndDn9W8w-LBFF9WCdYpPKX78V",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
+      "text": "Свобода от чужих оценок\nОн навсегда перестал искать одобрения и аплодисментов. Опыт одиночества научил его главному: когда ты стоишь один против всего мира, единственное, что имеет значение — это то, кем ты являешься на самом деле.\n\nПодписывайся на @vitali_rapeika. Здесь мы выжигаем слабость, иллюзии и строим характер, способный выдержать любой удар"
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "PBXKvc9WHMF2pStF",
+      "page_number": 1,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBbHwq2nRppzN66r",
+      "page_number": 2,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBYR9b5mqCw63srK",
+      "page_number": 3,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBCpBj1RSBLDv6Gn",
+      "page_number": 4,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBtDh7gBKWzF5tCJ",
+      "page_number": 5,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBSD56NpD8Z65xrv",
+      "page_number": 6,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBkdxZtbndDn9W8w",
+      "page_number": 7,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBnl4PhMp6SZldZc",
+      "page_number": 8,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    }
+  ]
+}

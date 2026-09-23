@@ -1,0 +1,195 @@
+{
+  "carousel_id": 3,
+  "text_operations": [
+    {
+      "type": "update_title",
+      "title": "14.09.26 - 3"
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBXKvc9WHMF2pStF-LBYyfNb2hnYbXzW2",
+      "text": "ИДЕАЛЬНЫЙ ПОДВОХ: Почему люди без вредных привычек пугают окружающих гораздо сильнее, чем тусовщики"
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
+      "text": "Иллюзия «удобного» человека\nТы не пропадаешь в клубах, не злоупотребляешь алкоголем, не предаешь доверие и всегда отвечаешь на сообщения без глупых пауз. Со стороны ты кажешься идеальным «зеленым флагом». Но люди инстинктивно ищут скрытый дефект, потому что такая безупречность кажется им подозрительной."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBYR9b5mqCw63srK-LBDsPG3BTLsWsHf4",
+      "text": "Твоя главная зависимость\nПодвох действительно есть, но он не в тайных пороках. Твои «приколы» гораздо масштабнее: ты зависим от личной эффективности, самоанализа и постоянного роста. Вместо того чтобы сливать энергию на дешевый дофамин и пустые тусовки, ты инвестируешь её в создание собственной жесткой реальности."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBYR9b5mqCw63srK-LBDsPG3BTLsWsHf4",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBCpBj1RSBLDv6Gn-LBPzl1zdT2DXssh1",
+      "text": "Тотальная непереносимость фальши\nТы не играешь в социальные игры и не терпишь манипуляций. Если кто-то пытается устроить эмоциональные качели, поиграть в «холодно-горячо» или проявить неуважение — ты не устраиваешь сцен. Ты просто молча, быстро и навсегда вычеркиваешь этого человека из своей жизни."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBCpBj1RSBLDv6Gn-LBPzl1zdT2DXssh1",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBtDh7gBKWzF5tCJ-LB0FvgjhkDM2v3Lp",
+      "text": "Рентгеновский взгляд на людей\nТвой подвох в том, что ты видишь людей насквозь. Тебе не интересны поверхностные разговоры ни о чем. Ты замечаешь чужие маски, скрытые мотивы и комплексы с первых минут общения. И эта способность заглядывать в самую глубину часто пугает тех, кто привык прятаться за фальшивыми ролями."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBtDh7gBKWzF5tCJ-LB0FvgjhkDM2v3Lp",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBSD56NpD8Z65xrv-LBwP3399V5TBSrtP",
+      "text": "Ледяная самодостаточность\nТебе искренне хорошо наедине с собой. Ты не ищешь отношений ради того, чтобы заткнуть внутреннюю пустоту или спастись от одиночества. Твоя эмоциональная независимость кажется окружающим холодной и пугающей, ведь тобой невозможно манипулировать через страх потери."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBSD56NpD8Z65xrv-LBwP3399V5TBSrtP",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBkdxZtbndDn9W8w-LBFF9WCdYpPKX78V",
+      "text": "Вызов для любого окружения\nБыть рядом с тобой — это серьезное испытание. Ты не требуешь идеальности от других, но твой собственный уровень дисциплины и честности автоматически заставляет окружающих замечать их собственную слабость. Рядом с тобой невозможно оставаться прежним — приходится либо расти, либо уходить."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBkdxZtbndDn9W8w-LBFF9WCdYpPKX78V",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
+      "text": "Переходи на уровень сильной игры\nСложный характер и высокие стандарты — это не дефект. Это признак того, что ты перерос стандартные шаблоны и готов играть по своим правилам.\n\nПодписывайся на @vitali_rapeika. Здесь мы отбрасываем розовые очки, препарируем психологию поведения и строим внутренний стержень, который невозможно сломать"
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "PBXKvc9WHMF2pStF",
+      "page_number": 1,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBbHwq2nRppzN66r",
+      "page_number": 2,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBYR9b5mqCw63srK",
+      "page_number": 3,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBCpBj1RSBLDv6Gn",
+      "page_number": 4,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBtDh7gBKWzF5tCJ",
+      "page_number": 5,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBSD56NpD8Z65xrv",
+      "page_number": 6,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBkdxZtbndDn9W8w",
+      "page_number": 7,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBnl4PhMp6SZldZc",
+      "page_number": 8,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    }
+  ]
+}

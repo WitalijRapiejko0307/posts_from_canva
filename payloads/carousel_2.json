@@ -1,0 +1,195 @@
+{
+  "carousel_id": 2,
+  "text_operations": [
+    {
+      "type": "update_title",
+      "title": "14.09.26 - 2"
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBXKvc9WHMF2pStF-LBYyfNb2hnYbXzW2",
+      "text": "НОВЫЙ ГОД — НОВОЕ Я: 27 привычек, которые перевернут твою жизнь, если начнёшь с июня"
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
+      "text": "Восстанови баланс сна\nУлучшай качество своего сна, убирая телефон перед сном. Это простой шаг поможет тебе начать день с энергией и ясностью ума."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBYR9b5mqCw63srK-LBDsPG3BTLsWsHf4",
+      "text": "Двигайся к здоровью\nРегулярная физическая активность — ключ к физическому и ментальному благополучию. Это не только укрепит тело, но и поднимет настроение."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBYR9b5mqCw63srK-LBDsPG3BTLsWsHf4",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBCpBj1RSBLDv6Gn-LBPzl1zdT2DXssh1",
+      "text": "Финансовая осознанность\nНе живи без плана по деньгам. Закрывай долги и нерешённые вопросы. Контроль над финансами приносит спокойствие и уверенность."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBCpBj1RSBLDv6Gn-LBPzl1zdT2DXssh1",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBtDh7gBKWzF5tCJ-LB0FvgjhkDM2v3Lp",
+      "text": "Наведи порядок в жизни\nУдаляй лишний шум, наводи порядок дома и прекращай откладывать важные разговоры. Это освободит пространство для роста и новых возможностей."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBtDh7gBKWzF5tCJ-LB0FvgjhkDM2v3Lp",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBSD56NpD8Z65xrv-LBwP3399V5TBSrtP",
+      "text": "Учись говорить «нет»\nНе бойся отказывать и защищать свои границы. Умение сказать «нет» — это шаг к самоуважению и настоящей свободе."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBSD56NpD8Z65xrv-LBwP3399V5TBSrtP",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBkdxZtbndDn9W8w-LBFF9WCdYpPKX78V",
+      "text": "Время для близких и себя\nПроводя больше времени с близкими и учась отдыхать без гаджетов, ты укрепляешь отношения и находишь гармонию с собой."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBkdxZtbndDn9W8w-LBFF9WCdYpPKX78V",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
+      "text": "Маленькие шаги — большие перемены\nЖизнь меняется не одним крупным событием, а множеством маленьких решений, которые ты перестал откладывать. Действуй уже сейчас и начни участвовать в своей жизни.\n\nПодписывайся на @vitali_rapeika. Здесь ты найдешь мотивацию и практические советы для внедрения новых привычек"
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "PBXKvc9WHMF2pStF",
+      "page_number": 1,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBbHwq2nRppzN66r",
+      "page_number": 2,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBYR9b5mqCw63srK",
+      "page_number": 3,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBCpBj1RSBLDv6Gn",
+      "page_number": 4,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBtDh7gBKWzF5tCJ",
+      "page_number": 5,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBSD56NpD8Z65xrv",
+      "page_number": 6,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBkdxZtbndDn9W8w",
+      "page_number": 7,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBnl4PhMp6SZldZc",
+      "page_number": 8,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    }
+  ]
+}

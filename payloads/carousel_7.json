@@ -1,0 +1,195 @@
+{
+  "carousel_id": 7,
+  "text_operations": [
+    {
+      "type": "update_title",
+      "title": "14.09.26 - 7"
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBXKvc9WHMF2pStF-LBYyfNb2hnYbXzW2",
+      "text": "ТИХИЙ АД: Почему мы путаем эмоциональное насилие со страстью и как выйти из этой ловушки"
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
+      "text": "Иллюзия красивой драмы\nФильм «Глубокие воды» многие восприняли как эротический триллер, но на деле это детальное пособие по тяжелой созависимости. За внешним благополучием, дорогим домом и светскими вечеринками скрывается тихая, холодная война на взаимное уничтожение, где партнеры медленно выжигают друг друга."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBYR9b5mqCw63srK-LBDsPG3BTLsWsHf4",
+      "text": "Насилие без криков и посуды\nСамое жуткое в таких отношениях — отсутствие явных истерик. Никто не бьет посуду и не пакует чемоданы. Разрушение психики становится привычной рутиной. Один партнер постоянно провоцирует и унижает, чтобы высечь хоть какую-то искру эмоций, а второй безропотно терпит из страха остаться в одиночестве."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBYR9b5mqCw63srK-LBDsPG3BTLsWsHf4",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBCpBj1RSBLDv6Gn-LBPzl1zdT2DXssh1",
+      "text": "Ловушка адреналиновых качелей\nСегодня общество романтизирует токсичность, называя ревность, тревогу и эмоциональные качели «настоящей химией» и «безумной страстью». Но постоянный стресс — это не глубина чувств. Это твоя нервная система, которая истощена и работает в режиме выживания, принимая угрозу за любовь."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBCpBj1RSBLDv6Gn-LBPzl1zdT2DXssh1",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBtDh7gBKWzF5tCJ-LB0FvgjhkDM2v3Lp",
+      "text": "Усталость от бесконечного бега\nКогда ты раз за разом наступаешь на одни и те же грабли, соглашаясь на эмоциональный суррогат, наступает момент выгорания. Хочется просто остановить этот круг, заблокировать все контакты и оградить себя от любого намека на новые «адреналиновые» знакомства, которые снова приведут к боли."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBtDh7gBKWzF5tCJ-LB0FvgjhkDM2v3Lp",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBSD56NpD8Z65xrv-LBwP3399V5TBSrtP",
+      "text": "Исцеляющая сила дистанции\nИногда лучшая терапия — это не долгие разговоры и выяснения отношений, а полное исчезновение из чужого поля зрения. Без долгих объяснений, без предупреждений и без глупых попыток удержать тех, кто не держится за тебя. Просто сделай шаг назад и выбери тишину."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBSD56NpD8Z65xrv-LBwP3399V5TBSrtP",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBkdxZtbndDn9W8w-LBFF9WCdYpPKX78V",
+      "text": "Момент истины в тишине\nИменно в этой паузе спадают все маски. В тишине становится предельно ясно: кто действительно дорожит тобой и готов искать встречи, а кто просто привык паразитировать на твоем внимании, времени и энергии, ничего не отдавая взамен. Твое молчание скажет тебе больше, чем любые чужие слова."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBkdxZtbndDn9W8w-LBFF9WCdYpPKX78V",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
+      "text": "Выход из созависимых сценариев\nТы не обязан быть заложником чужих травм и разрушать себя ради иллюзии близости. Пора вернуть контроль над своей жизнью и научиться выбирать безопасность.\n\nПодписывайся на @vitali_rapeika. Здесь мы препарируем токсичные сценарии, выходим из зависимости и строим сильную личность"
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "PBXKvc9WHMF2pStF",
+      "page_number": 1,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBbHwq2nRppzN66r",
+      "page_number": 2,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBYR9b5mqCw63srK",
+      "page_number": 3,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBCpBj1RSBLDv6Gn",
+      "page_number": 4,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBtDh7gBKWzF5tCJ",
+      "page_number": 5,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBSD56NpD8Z65xrv",
+      "page_number": 6,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBkdxZtbndDn9W8w",
+      "page_number": 7,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBnl4PhMp6SZldZc",
+      "page_number": 8,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "carousel_id": 9,
+  "text_operations": [
+    {
+      "type": "update_title",
+      "title": "14.09.26 - 9"
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBXKvc9WHMF2pStF-LBYyfNb2hnYbXzW2",
+      "text": "ГЕНОМ ДЕЙСТВИЯ: Как одно секундное решение забирать свое навсегда отделяет мужчин от вечных зрителей"
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
+      "text": "Подошел и забрал\nПока обычный парень сомневается, просчитывает риски и ждет идеального момента, смелый мужчина просто делает шаг. Он подходит и знакомится. И пока первый нерешительно топчется на месте, второй уже забирает внимание женщины, которая могла бы стать судьбой сомневающегося."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBYR9b5mqCw63srK-LBDsPG3BTLsWsHf4",
+      "text": "Сказал — получил шанс\nБольшинство людей молчат на встречах и конференциях, боясь показаться глупыми или навязчивыми. Смелый не боится заявить о себе: он задает вопросы, инициирует диалог и предлагает идеи. В итоге именно в его записной книжке оказываются контакты, которые завтра принесут миллионы."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBYR9b5mqCw63srK-LBDsPG3BTLsWsHf4",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBCpBj1RSBLDv6Gn-LBPzl1zdT2DXssh1",
+      "text": "Экономия времени через действие\nПоказательный пример бытовой смелости: когда в магазине работает одна касса, толпа покорно стоит и ждет. Смелый мужчина не терпит неудобств — он спокойно требует открыть вторую. Одно короткое действие экономит время, пока остальные продолжают молча терять свои ресурсы."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBCpBj1RSBLDv6Gn-LBPzl1zdT2DXssh1",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBtDh7gBKWzF5tCJ-LB0FvgjhkDM2v3Lp",
+      "text": "Прямота рождает уважение\nСлабый человек соглашается с неудобными условиями, терпит пренебрежение и копит обиды. Сильный открыто обозначает то, что его не устраивает. Без криков, истерик и лишних эмоций — спокойно и прямо. Именно за эту внутреннюю жесткость его начинают уважать и воспринимать всерьез."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBtDh7gBKWzF5tCJ-LB0FvgjhkDM2v3Lp",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBSD56NpD8Z65xrv-LBwP3399V5TBSrtP",
+      "text": "Риск как единственный путь к росту\nДержаться за иллюзорную стабильность — это самый быстрый способ похоронить свой потенциал. Смелый мужчина идет в неизвестность, ошибается, падает, но продолжает двигаться вперед. И в результате получает тот уровень жизни, о котором осторожное большинство может только мечтать."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBSD56NpD8Z65xrv-LBwP3399V5TBSrtP",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBkdxZtbndDn9W8w-LBFF9WCdYpPKX78V",
+      "text": "Страх — это нормально\nСмелость — это не генетическое отсутствие страха или тревоги. Это способность действовать вопреки им. Каждый раз, когда ты преодолеваешь внутреннее сопротивление ради нужного шага, ты тренируешь свой ментальный стержень и забираешь управление жизнью в свои руки."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBkdxZtbndDn9W8w-LBFF9WCdYpPKX78V",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
+      "text": "Хватит ждать разрешения\nИдеальный момент никогда не наступит. Жизнь принадлежит тем, кто берет ее без спроса и не ждет одобрения со стороны.\n\nПодписывайся на @vitali_rapeika. Здесь мы выжигаем нерешительность и строим характер действия, свободный от чужих рамок"
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "PBXKvc9WHMF2pStF",
+      "page_number": 1,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBbHwq2nRppzN66r",
+      "page_number": 2,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBYR9b5mqCw63srK",
+      "page_number": 3,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBCpBj1RSBLDv6Gn",
+      "page_number": 4,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBtDh7gBKWzF5tCJ",
+      "page_number": 5,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBSD56NpD8Z65xrv",
+      "page_number": 6,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBkdxZtbndDn9W8w",
+      "page_number": 7,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBnl4PhMp6SZldZc",
+      "page_number": 8,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    }
+  ]
+}

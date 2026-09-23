@@ -1,0 +1,195 @@
+{
+  "carousel_id": 4,
+  "text_operations": [
+    {
+      "type": "update_title",
+      "title": "14.09.26 - 4"
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBXKvc9WHMF2pStF-LBYyfNb2hnYbXzW2",
+      "text": "МАГНЕТИЗМ ПОД КОНТРОЛЕМ: 3 нетипичных упражнения, которые мгновенно изменят то, как тебя воспринимают окружающие"
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
+      "text": "Истинная природа харизмы\nНастоящий магнетизм — это не врожденный дар, не дорогая одежда и не отрепетированная улыбка. Харизма начинается изнутри, с твоей способности полностью управлять собственным телом, голосом и вниманием. Три простых, но глубоких упражнения помогут тебе обрести этот внутренний вес."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBYR9b5mqCw63srK-LBDsPG3BTLsWsHf4",
+      "text": "Тотальная неподвижность\nПервая практика — выдержать собственное присутствие. Сядь перед зеркалом, заведи таймер на одну минуту и просто смотри на себя. Твоя задача — не суетиться, не поправлять одежду, не менять выражение лица и оставаться абсолютно статичным в течение шестидесяти секунд."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBYR9b5mqCw63srK-LBDsPG3BTLsWsHf4",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBCpBj1RSBLDv6Gn-LBPzl1zdT2DXssh1",
+      "text": "Психологический эффект паузы\nВ первые секунды тело начнет бунтовать, требуя отвести взгляд или сделать лишнее движение. Преодолевая этот импульс, ты тренируешь ментальную устойчивость. Мужчина, способный выдерживать паузу и оставаться спокойным в статике, мгновенно считывается окружающими как сильный лидер."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBCpBj1RSBLDv6Gn-LBPzl1zdT2DXssh1",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBtDh7gBKWzF5tCJ-LB0FvgjhkDM2v3Lp",
+      "text": "Голос из опоры\nВторая практика — вернуть звучанию устойчивость. Встань ровно, почувствуй опору под ногами, расправь плечи и произнеси вслух: «Я здесь. Мое слово имеет вес». Следи за тем, чтобы звук шел не из зажатого горла, а глубоко из корпуса, вибрируя в грудной клетке."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBtDh7gBKWzF5tCJ-LB0FvgjhkDM2v3Lp",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBSD56NpD8Z65xrv-LBwP3399V5TBSrtP",
+      "text": "Сила спокойного звучания\nГлубокий и объемный голос не пытается перекричать толпу или искусственно кого-то впечатлить. Он звучит ровно, спокойно и уверенно. Именно такую размеренную речь люди инстинктивно слушают с максимальным вниманием, в отличие от суетливого или оправдывающегося тона."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBSD56NpD8Z65xrv-LBwP3399V5TBSrtP",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBkdxZtbndDn9W8w-LBFF9WCdYpPKX78V",
+      "text": "Взгляд без вызова\nТретий навык — удержание зрительного контакта. Во время диалога спокойно смотри собеседнику в глаза в течение нескольких секунд. Без агрессии, без попытки доминировать или оценить человека. Просто присутствуй в моменте, транслируя внутреннюю стабильность и уверенность."
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBkdxZtbndDn9W8w-LBFF9WCdYpPKX78V",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    },
+    {
+      "type": "replace_text",
+      "element_id": "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
+      "text": "Перестань разбрасываться энергией\nХаризма рождается там, где ты прекращаешь суетиться и пытаться понравиться. Умение держать себя — это главный навык сильного человека.\n\nПодписывайся на @vitali_rapeika. Здесь мы выжигаем слабость и строим железный характер, управляя своим телом, голосом и разумом"
+    },
+    {
+      "type": "format_text",
+      "element_id": "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
+      "formatting": {
+        "font_size": 46,
+        "text_align": "center"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "page_id": "PBXKvc9WHMF2pStF",
+      "page_number": 1,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBbHwq2nRppzN66r",
+      "page_number": 2,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBYR9b5mqCw63srK",
+      "page_number": 3,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBCpBj1RSBLDv6Gn",
+      "page_number": 4,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBtDh7gBKWzF5tCJ",
+      "page_number": 5,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBSD56NpD8Z65xrv",
+      "page_number": 6,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBkdxZtbndDn9W8w",
+      "page_number": 7,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    },
+    {
+      "page_id": "PBnl4PhMp6SZldZc",
+      "page_number": 8,
+      "dimension": {
+        "width": 1080,
+        "height": 1350
+      },
+      "is_responsive": false,
+      "is_empty": false,
+      "is_editable": true
+    }
+  ]
+}
