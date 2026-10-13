@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "pageId": 5,
+    "design_id": "DAHWcliEbv8",
+    "slots_ok": true,
+    "caption_ok": true,
+    "published": true,
+    "problems": []
+  },
+  {
+    "id": 2,
+    "pageId": 6,
+    "design_id": "DAHWcly-3Tw",
+    "slots_ok": true,
+    "caption_ok": true,
+    "published": true,
+    "problems": []
+  },
+  {
+    "id": 3,
+    "pageId": 7,
+    "design_id": "DAHWckjOZ6k",
+    "slots_ok": true,
+    "caption_ok": true,
+    "published": true,
+    "problems": ["slot script missed page 2 initially; fixed manually"]
+  },
+  {
+    "id": 4,
+    "pageId": 8,
+    "design_id": "DAHWcsSfusw",
+    "slots_ok": true,
+    "caption_ok": true,
+    "published": true,
+    "problems": []
+  },
+  {
+    "id": 5,
+    "pageId": 9,
+    "design_id": "DAHWcv3BAXw",
+    "slots_ok": true,
+    "caption_ok": true,
+    "published": true,
+    "problems": []
+  }
+]

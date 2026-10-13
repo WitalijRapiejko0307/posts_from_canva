@@ -1,0 +1,73 @@
+{
+  "date": "29.09.26",
+  "results": [
+    {
+      "id": 6,
+      "pageId": 15,
+      "design_id": "DAHWi8yaWEU",
+      "published": true,
+      "characters": 252,
+      "slotLabels": [
+        "Страница 1",
+        "Страница 2",
+        "Страница 3",
+        "Страница 4",
+        "Страница 5",
+        "Страница 6",
+        "Страница 7",
+        "Страница 8"
+      ],
+      "problems": [
+        "type_text dropped spaces/words vs target (252 vs 256): яд.Когда, спасаешь ми, разводо, Разбираемсяв"
+      ]
+    },
+    {
+      "id": 7,
+      "pageId": 24,
+      "design_id": "DAHWiww2qGo",
+      "published": false,
+      "characters": 0,
+      "slotLabels": [
+        "Страница 1"
+      ],
+      "problems": [
+        "in_progress: 1/8 slots configured; caption not entered; publish not clicked"
+      ]
+    },
+    {
+      "id": 8,
+      "pageId": 23,
+      "design_id": "DAHWi5zHJLo",
+      "published": false,
+      "characters": 0,
+      "slotLabels": [
+        "Страница 2"
+      ],
+      "problems": [
+        "pending: wrong single slot; needs 8 pages + caption + publish"
+      ]
+    },
+    {
+      "id": 9,
+      "pageId": 22,
+      "design_id": "DAHWi3g7ov8",
+      "published": false,
+      "characters": 0,
+      "slotLabels": [],
+      "problems": [
+        "pending: not processed this session"
+      ]
+    },
+    {
+      "id": 10,
+      "pageId": 21,
+      "design_id": "DAHWi3y6Tds",
+      "published": false,
+      "characters": 0,
+      "slotLabels": [],
+      "problems": [
+        "pending: not processed this session"
+      ]
+    }
+  ]
+}

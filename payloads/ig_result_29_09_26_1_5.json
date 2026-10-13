@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "pageId": 4,
+    "design_id": "DAHWi3sadAA",
+    "slots_ok": true,
+    "caption_ok": true,
+    "published": true,
+    "problems": ["Cloudflare challenge on first open; redirected to /edit URL; Instagram iframe failed once, fixed after reload"]
+  },
+  {
+    "id": 2,
+    "pageId": 10,
+    "design_id": "DAHWi2N-Wxc",
+    "slots_ok": true,
+    "caption_ok": false,
+    "published": false,
+    "problems": [
+      "Instagram caption iframe chrome-error after slots configured; reload reset panel before caption/publish could complete"
+    ]
+  },
+  {
+    "id": 3,
+    "pageId": null,
+    "design_id": "DAHWi2oeOmE",
+    "slots_ok": false,
+    "caption_ok": false,
+    "published": false,
+    "problems": ["Not started — sibling tabs 5-10 used for carousels 6-10; no dedicated tab opened for id 3"]
+  },
+  {
+    "id": 4,
+    "pageId": null,
+    "design_id": "DAHWiw6jZZY",
+    "slots_ok": false,
+    "caption_ok": false,
+    "published": false,
+    "problems": ["Not started"]
+  },
+  {
+    "id": 5,
+    "pageId": null,
+    "design_id": "DAHWi8p7HXU",
+    "slots_ok": false,
+    "caption_ok": false,
+    "published": false,
+    "problems": ["Not started"]
+  }
+]

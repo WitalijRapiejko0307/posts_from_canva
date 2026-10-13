@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "design_id": "DAHWi3sadAA",
+    "slots_ok": true,
+    "caption_ok": true,
+    "published": true,
+    "caption_method": "type_text",
+    "characters": 178,
+    "problems": []
+  },
+  {
+    "id": 2,
+    "design_id": "DAHWi2N-Wxc",
+    "slots_ok": true,
+    "caption_ok": true,
+    "published": true,
+    "caption_method": "type_text",
+    "characters": 155,
+    "problems": []
+  },
+  {
+    "id": 3,
+    "design_id": "DAHWi2oeOmE",
+    "slots_ok": true,
+    "caption_ok": true,
+    "published": true,
+    "caption_method": "type_text",
+    "characters": 162,
+    "problems": []
+  },
+  {
+    "id": 4,
+    "design_id": "DAHWiw6jZZY",
+    "slots_ok": true,
+    "caption_ok": true,
+    "published": true,
+    "caption_method": "type_text",
+    "characters": 162,
+    "problems": []
+  },
+  {
+    "id": 5,
+    "design_id": "DAHWi8p7HXU",
+    "slots_ok": true,
+    "caption_ok": true,
+    "published": true,
+    "caption_method": "type_text",
+    "characters": 164,
+    "problems": []
+  }
+]

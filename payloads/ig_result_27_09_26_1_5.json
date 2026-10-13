@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "pageId": 2,
+    "design_id": "DAHWW9htsB4",
+    "published": true,
+    "slots_ok": true,
+    "caption_ok": false,
+    "slots": ["Страница 1", "Страница 2", "Страница 3", "Страница 4", "Страница 5", "Страница 6", "Страница 7", "Страница 8"],
+    "error": "caption mangled by type_text (spaces lost, @vitai_rapeika); publish dialog started"
+  },
+  {
+    "id": 2,
+    "pageId": 3,
+    "design_id": "DAHWXHSRdPU",
+    "published": true,
+    "slots_ok": true,
+    "caption_ok": true,
+    "slots": ["Страница 1", "Страница 2", "Страница 3", "Страница 4", "Страница 5", "Страница 6", "Страница 7", "Страница 8"],
+    "error": null
+  },
+  {
+    "id": 3,
+    "pageId": 4,
+    "design_id": "DAHWXBfBlkc",
+    "published": true,
+    "slots_ok": true,
+    "caption_ok": false,
+    "slots": ["Страница 1", "Страница 2", "Страница 3", "Страница 4", "Страница 5", "Страница 6", "Страница 7", "Страница 8"],
+    "error": "fill on Caption auto-triggered publish; caption field empty at publish dialog"
+  },
+  {
+    "id": 4,
+    "pageId": 5,
+    "design_id": "DAHWXJgI9Qs",
+    "published": true,
+    "slots_ok": true,
+    "caption_ok": false,
+    "slots": ["Страница 1", "Страница 2", "Страница 3", "Страница 4", "Страница 5", "Страница 6", "Страница 7", "Страница 8"],
+    "error": "fill on Caption auto-triggered publish; caption field empty at publish dialog"
+  },
+  {
+    "id": 5,
+    "pageId": 6,
+    "design_id": "DAHWW5iS7zM",
+    "published": true,
+    "slots_ok": true,
+    "caption_ok": false,
+    "slots": ["Страница 1", "Страница 2", "Страница 3", "Страница 4", "Страница 5", "Страница 6", "Страница 7", "Страница 8"],
+    "error": "Ctrl+V paste auto-triggered publish; caption field empty at publish dialog"
+  }
+]

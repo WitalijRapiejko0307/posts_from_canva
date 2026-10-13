@@ -1,137 +1,155 @@
-# План действий: создание Instagram-карусели в Canva
+# Plan: create Instagram carousels in Canva
 
-**Дата документа:** 10.09.26
+**Document date:** 02.10.26
 
----
+Text for this cycle is already in [`material/carousel.json`](../material/carousel.json) and [`material/description.json`](../material/description.json), prepared by [`plan-podgotovki-teksta-karuseli.md`](plan-podgotovki-teksta-karuseli.md).
 
-## 1. Подготовка текста
-
-- Подготовить **заголовок для слайда 1** (цепляющий, «пробивает баннерную слепоту»).
-- Подготовить **текст для слайдов 2–8** (ровно 7 слайдов контента + слайд 1 = 8 слайдов всего).
-- На последнем слайде — призыв к действию (подписка, директ, ключевое слово и т.п.).
+Use the same `POST_COUNT` and `SLIDE_COUNT` as in that text-prep run. Do not assume 5 posts or 8 slides.
 
 ---
 
-## 2. Найти исходный дизайн
+## Parameters
 
-1. Открыть Canva через MCP.
-2. Выполнить поиск последнего созданного дизайна для Instagram-поста:
-   - `search-designs` → `sort_by: modified_descending`, `limit: 3–5`.
-3. Выбрать дизайн с **8 слайдами** (карусель) — обычно последний по дате изменения.
+Taken from the text-prep cycle. Do not invent new counts here.
 
----
-
-## 3. Создать копию
-
-1. Вызвать `copy-design` с `design_id` исходного дизайна.
-2. **Назвать копию:** `{название исходного дизайна} {текущая дата}`  
-   - Формат даты: **ДД.ММ.ГГ** (например: `09.09.26 10.09.26` или просто `10.09.26`).
-   - Пример: если исходник называется «09.09.26», а сегодня 10.09.26 → копия: **`10.09.26`**.
+| Parameter | Meaning |
+|-----------|---------|
+| `POST_COUNT` | How many carousels to build (ids `1` … `POST_COUNT` in the JSON files) |
+| `SLIDE_COUNT` | Slides per carousel, including the hook and the closing CTA |
 
 ---
 
-## 4. Заменить текст на слайдах
+## Fixed inputs
 
-1. Вызвать `start-editing-transaction` для ID копии.
-2. Запомнить `transaction_id` и массив `pages`.
-3. Для каждого слайда выполнить `perform-editing-operations`:
+| What | Value |
+|------|--------|
+| Source designs | latest Instagram-post carousels in Canva |
+| Copy name | `{source title} {today}` with date **DD.MM.YY** (example: source `09.09.26`, today `10.09.26` → copy **`10.09.26`**) |
+| Slide size | 1080 × 1350 px |
+| Text block width | 864 px |
+| Font on slides 2 … `SLIDE_COUNT` | **52**, center aligned |
+| Account | **vitali_rapeika** |
+| Slide text | [`material/carousel.json`](../material/carousel.json) |
+| Captions | [`material/description.json`](../material/description.json) |
 
-| Слайд | Действие |
-|-------|----------|
-| 1 | `replace_text` — заголовок |
-| 2–8 | `replace_text` — текст слайда |
-| 2–8 | `format_text` — `font_size: 52`, `text_align: center` |
-
-4. Операции можно батчить порциями (слайды 1–3, 4–6, 7–8), если запрос большой.
-
----
-
-## 5. Центрировать текстовые блоки (слайды 2–8)
-
-1. После замены текста взять **высоту** текстового блока из ответа API (`dimension.height`).
-2. Рассчитать позицию:
-   - **Горизонталь:** `left = (1080 - 864) / 2 = 108` (ширина блока 864 px).
-   - **Вертикаль:** `top = (1350 - height) / 2` (высота слайда 1350 px).
-3. Вызвать `position_element` для каждого слайда 2–8.
+Slide 1 is the hook. The last slide is the CTA, including `@vitali_rapeika`.
 
 ---
 
-## 6. Сохранить дизайн
+## 1. Find the source design
 
-1. Вызвать `commit-editing-transaction` с тем же `transaction_id`.
-2. Сохранить ссылку на готовый дизайн (`edit_url` из ответа `copy-design` или после коммита).
-3. Оригинал не изменяется — все правки только в копии.
+1. Open Canva through MCP.
+2. Search the latest Instagram-post designs: `search-designs` with `sort_by: modified_descending` and `limit: 3–5`.
+3. Pick a design that has **`SLIDE_COUNT` slides**. It is usually the most recently modified carousel.
 
----
-
-## 7. Открыть все карусели в Chrome
-
-После создания (все копии сохранены) открыть **каждую** готовую карусель в браузере Chrome — отдельная вкладка на URL дизайна **без** `/edit` в конце.
-
-- Если в ответе API пришёл `edit_url` вида `https://www.canva.com/design/{id}/edit` — отбросить суффикс `/edit` и открывать `https://www.canva.com/design/{id}`.
-- Ссылка с `/edit` по id **не читается**: сервер возвращает **404**.
-- MCP `user-chrome-devtools`: `list_pages` → при необходимости `new_page` с URL каждой карусели (без `/edit`).
-- Ожидание: сессия Canva уже залогинена, на вкладке открыт дизайн (`canva.com/design/…`), не экран логина.
+Repeat for each of the `POST_COUNT` carousels. Each copy needs its own source with `SLIDE_COUNT` slides.
 
 ---
 
-## 8.подготовка к постингу в Instagram (без публикации)
+## 2. Create a copy
 
-Для каждой открытой карусели:
-
-1. **Поделиться → Instagram**. Format = **Post**, аккаунт **vitali_rapeika**.
-2. Canva по умолчанию подставляет одну страницу — нужны **8 слотов**:
-   - слот 1 → Страница 1;
-   - слоты 2–8: **Добавить изображение → Выберите страницу → Страница N**.
-3. При добавлении страницы **не ждать загрузки слайда** — сразу проставлять все страницы карусели для постинга.
-4. Проверка: в панели 8 слотов «Страница 1» … «Страница 8», без пустых «Выберите страницу».
-5. **Caption** — взять из [`material/description.json`](../material/description.json): поле `text` у записи с тем же `id`, что и карусель. Внести набором текста **Не публиковать.**
+1. Call `copy-design` with the source `design_id`.
+2. Name the copy `{source title} {today}` using **DD.MM.YY**.
+3. The original stays unchanged. All edits go into the copy.
 
 ---
 
-## 9. Чеклист перед постингом
+## 3. Replace text on the slides
 
-- [ ] Слайд 1: заголовок без опечаток, кавычки «» на месте
-- [ ] Слайды 2–8: весь текст вставлен, нумерация 1–7 корректна
-- [ ] Шрифт на слайдах 2–8: **52**
-- [ ] Текст на слайдах 2–8: **по центру** (горизонталь и вертикаль)
-- [ ] Последний слайд: CTA и @vitali_rapeika
-- [ ] Дизайн сохранён (`commit-editing-transaction` выполнен)
-- [ ] Копия названа по дате: **`10.09.26`** (или `{исходник} {дата}`)
-- [ ] Все карусели открыты во вкладках Chrome
-- [ ] На каждой карусели проставлены страницы 1–8 для Instagram Post
-- [ ] Caption заполнен из `material/description.json` (по `id`)
-- [ ] Кнопка «Опубликовать» **не** нажата
+Read slide strings from `material/carousel.json` for this carousel `id`.
 
----
+1. Call `start-editing-transaction` for the copy id.
+2. Keep `transaction_id` and the `pages` array.
+3. For each slide, call `perform-editing-operations`:
 
-## 10 публикация в Instagram
+| Slide | Action |
+|-------|--------|
+| 1 | `replace_text` — hook from `slides` where `slide_number` is 1 |
+| 2 … `SLIDE_COUNT` | `replace_text` — that slide’s `text` |
+| 2 … `SLIDE_COUNT` | `format_text` — `font_size: 52`, `text_align: center` |
 
-Для каждой открытой карусели:
-
-1. **Кликнуть Опубликовать**
-2. **Не ожидать пока пост опубликуется**
+Batch operations (for example three slides at a time) when one request is too large.
 
 ---
 
-## Справка: инструменты Canva MCP
+## 4. Center text blocks (slides 2 … `SLIDE_COUNT`)
 
-| Шаг | Инструмент |
-|-----|------------|
-| Поиск дизайна | `search-designs` |
-| Копирование | `copy-design` |
-| Начало редактирования | `start-editing-transaction` |
-| Замена / формат / позиция | `perform-editing-operations` |
-| Сохранение | `commit-editing-transaction` |
-| Отмена черновика | `cancel-editing-transaction` |
-| Открыть карусели в Chrome | `list_pages`, `new_page` (`user-chrome-devtools`) |
-| Поделиться → Instagram, слоты, Caption | `click`, `fill` (`user-chrome-devtools`) |
+1. After the text replace, take the text-block **height** from the API response (`dimension.height`).
+2. Position:
+   - **Horizontal:** `left = (1080 - 864) / 2 = 108` (block width 864 px).
+   - **Vertical:** `top = (1350 - height) / 2` (slide height 1350 px).
+3. Call `position_element` for every slide from 2 through `SLIDE_COUNT`.
 
 ---
 
-## Параметры шаблона (текущий)
+## 5. Save the design
 
-- **Размер слайда:** 1080 × 1350 px  
-- **Ширина текстового блока:** 864 px  
-- **Размер шрифта слайдов 2–8:** 52  
-- **Количество слайдов:** 8
+1. Call `commit-editing-transaction` with the same `transaction_id`.
+2. Keep the finished design URL (`edit_url` from `copy-design`, or the URL after commit).
+3. Repeat sections 1–5 until all `POST_COUNT` copies are saved.
+
+---
+
+## 6. Open every carousel in Chrome
+
+After every copy is saved, open **each** finished carousel in Chrome — one tab per design URL **without** `/edit` at the end.
+
+- If the API returned `edit_url` like `https://www.canva.com/design/{id}/edit`, drop the `/edit` suffix and open `https://www.canva.com/design/{id}`.
+- A link with `/edit` on the id is **not readable**: the server returns **404**.
+- MCP `user-chrome-devtools`: `list_pages`, then `new_page` for each carousel URL (without `/edit`).
+- Expectation: the Canva session is already logged in, and the tab shows the design (`canva.com/design/…`), not the login screen.
+
+---
+
+## 7. Prepare the Instagram post (do not publish)
+
+For each open carousel:
+
+1. **Share → Instagram**. Format = **Post**, account **vitali_rapeika**.
+2. Canva inserts one page by default. You need **`SLIDE_COUNT` slots**:
+   - slot 1 → Page 1;
+   - slots 2 … `SLIDE_COUNT`: **Add image → Choose a page → Page N**.
+3. When adding a page, **do not wait for the slide to load**. Assign every carousel page for posting immediately.
+4. Check: the panel has `SLIDE_COUNT` slots, “Page 1” through “Page `SLIDE_COUNT`”, and no empty “Choose a page”.
+5. **Caption** — from [`material/description.json`](../material/description.json): `text` of the entry with the same `id` as the carousel. Enter it with `type_text`. **Do not publish.**
+
+---
+
+## 8. Checklist before posting
+
+- [ ] `POST_COUNT` copies exist, one per id in `material/carousel.json`
+- [ ] Slide 1: hook matches the JSON, no typos, quotation marks intact
+- [ ] Slides 2 … `SLIDE_COUNT`: full text inserted
+- [ ] Font on slides 2 … `SLIDE_COUNT`: **52**
+- [ ] Text on slides 2 … `SLIDE_COUNT`: **centered** horizontally and vertically
+- [ ] Last slide: CTA and `@vitali_rapeika`
+- [ ] Design saved (`commit-editing-transaction` finished)
+- [ ] Copy named with today’s date: **`DD.MM.YY`** (or `{source} {date}`)
+- [ ] Every carousel is open in a Chrome tab
+- [ ] Each carousel has pages 1 … `SLIDE_COUNT` set for an Instagram Post
+- [ ] Caption filled from `material/description.json` (matching `id`)
+- [ ] **Publish** has not been clicked
+
+---
+
+## 9. Publish to Instagram
+
+For each open carousel:
+
+1. **Click Publish.**
+2. **Do not wait** for the post to finish publishing.
+
+---
+
+## Tools
+
+| Step | Tool |
+|------|------|
+| Find a design | `search-designs` |
+| Copy | `copy-design` |
+| Start editing | `start-editing-transaction` |
+| Replace, format, position | `perform-editing-operations` |
+| Save | `commit-editing-transaction` |
+| Discard a draft | `cancel-editing-transaction` |
+| Open carousels in Chrome | `list_pages`, `new_page` (`user-chrome-devtools`) |
+| Share → Instagram, slots, caption | `click`, `fill`, `type_text` (`user-chrome-devtools`) |

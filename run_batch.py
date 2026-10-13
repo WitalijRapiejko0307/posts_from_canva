@@ -6,8 +6,9 @@ from pathlib import Path
 
 from build_ops import ELEMENT_IDS, PAGES, SLIDE_HEIGHT, TEXT_LEFT, text_ops
 
-SOURCE_DESIGN_ID = "DAHVJ1CkcSc"
-DATE_PREFIX = "15.09.26"
+SOURCE_DESIGN_ID = "DAHWcj-q8Ng"
+DATE_PREFIX = "29.09.26"
+CAROUSEL_JSON = Path("material/carousel.json")
 STATE_FILE = Path("carousel_state.json")
 
 
@@ -32,7 +33,7 @@ def position_ops_from_heights(heights: dict[int, float]) -> list[dict]:
 
 
 def text_payload(transaction_id: str, cid: int) -> dict:
-    data = json.loads(Path("carousel.json").read_text(encoding="utf-8"))
+    data = json.loads(CAROUSEL_JSON.read_text(encoding="utf-8"))
     carousel = next(c for c in data["carousels"] if c["id"] == cid)
     return {
         "transaction_id": transaction_id,
@@ -71,7 +72,7 @@ def main() -> None:
         payloads_dir = Path("payloads_batch")
         payloads_dir.mkdir(exist_ok=True)
         for cid in range(1, 14):
-            data = json.loads(Path("carousel.json").read_text(encoding="utf-8"))
+            data = json.loads(CAROUSEL_JSON.read_text(encoding="utf-8"))
             carousel = next(c for c in data["carousels"] if c["id"] == cid)
             ops = text_ops(carousel, cid)
             (payloads_dir / f"c{cid}_text_ops.json").write_text(

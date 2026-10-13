@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "pageId": 3,
+    "design_id": "DAHWRfunxNU",
+    "published": true,
+    "caption_ok": true,
+    "slots_ok": true,
+    "problems": []
+  },
+  {
+    "id": 2,
+    "pageId": 4,
+    "design_id": "DAHWRU-vPW0",
+    "published": true,
+    "caption_ok": true,
+    "slots_ok": true,
+    "problems": []
+  },
+  {
+    "id": 3,
+    "pageId": 5,
+    "design_id": "DAHWRTHMCJY",
+    "published": true,
+    "caption_ok": true,
+    "slots_ok": true,
+    "problems": []
+  },
+  {
+    "id": 4,
+    "pageId": 6,
+    "design_id": "DAHWRTwgcw4",
+    "published": true,
+    "caption_ok": true,
+    "slots_ok": true,
+    "problems": []
+  },
+  {
+    "id": 5,
+    "pageId": 7,
+    "design_id": "DAHWRac2VhI",
+    "published": true,
+    "caption_ok": true,
+    "slots_ok": true,
+    "problems": []
+  },
+  {
+    "id": 6,
+    "pageId": 8,
+    "design_id": "DAHWRSUWoFk",
+    "published": true,
+    "caption_ok": true,
+    "slots_ok": true,
+    "problems": []
+  },
+  {
+    "id": 7,
+    "pageId": 9,
+    "design_id": "DAHWRXL8YZY",
+    "published": true,
+    "caption_ok": true,
+    "slots_ok": true,
+    "problems": []
+  },
+  {
+    "id": 8,
+    "pageId": 10,
+    "design_id": "DAHWRWGDudk",
+    "published": true,
+    "caption_ok": true,
+    "slots_ok": true,
+    "problems": []
+  },
+  {
+    "id": 9,
+    "pageId": 11,
+    "design_id": "DAHWReBWHXI",
+    "published": true,
+    "caption_ok": true,
+    "slots_ok": true,
+    "problems": []
+  },
+  {
+    "id": 10,
+    "pageId": 12,
+    "design_id": "DAHWRe4huyg",
+    "published": true,
+    "caption_ok": true,
+    "slots_ok": true,
+    "problems": []
+  }
+]

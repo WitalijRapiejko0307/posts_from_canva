@@ -1,0 +1,52 @@
+[
+  {
+    "id": 6,
+    "pageId": 7,
+    "design_id": "DAHWXENFyNc",
+    "published": true,
+    "slots_ok": true,
+    "caption_ok": true,
+    "slots": ["Страница 1", "Страница 2", "Страница 3", "Страница 4", "Страница 5", "Страница 6", "Страница 7", "Страница 8"],
+    "error": null
+  },
+  {
+    "id": 7,
+    "pageId": 8,
+    "design_id": "DAHWW7bTWpw",
+    "published": true,
+    "slots_ok": true,
+    "caption_ok": true,
+    "slots": ["Страница 1", "Страница 2", "Страница 3", "Страница 4", "Страница 5", "Страница 6", "Страница 7", "Страница 8"],
+    "error": null
+  },
+  {
+    "id": 8,
+    "pageId": 9,
+    "design_id": "DAHWXDGyMQA",
+    "published": true,
+    "slots_ok": true,
+    "caption_ok": true,
+    "slots": ["Страница 1", "Страница 2", "Страница 3", "Страница 4", "Страница 5", "Страница 6", "Страница 7", "Страница 8"],
+    "error": null
+  },
+  {
+    "id": 9,
+    "pageId": 10,
+    "design_id": "DAHWW-YyROU",
+    "published": true,
+    "slots_ok": true,
+    "caption_ok": true,
+    "slots": ["Страница 1", "Страница 2", "Страница 3", "Страница 4", "Страница 5", "Страница 6", "Страница 7", "Страница 8"],
+    "error": null
+  },
+  {
+    "id": 10,
+    "pageId": 11,
+    "design_id": "DAHWWwf6mL0",
+    "published": true,
+    "slots_ok": true,
+    "caption_ok": true,
+    "slots": ["Страница 1", "Страница 2", "Страница 3", "Страница 4", "Страница 5", "Страница 6", "Страница 7", "Страница 8"],
+    "error": null
+  }
+]

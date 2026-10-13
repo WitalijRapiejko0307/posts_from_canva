@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "pageId": 3,
+    "url": "https://www.canva.com/design/DAHWRfunxNU",
+    "slots": [
+      "Страница 1",
+      "Страница 2",
+      "Страница 3",
+      "Страница 4",
+      "Страница 5",
+      "Страница 6",
+      "Страница 7",
+      "Страница 8"
+    ],
+    "caption_ok": true,
+    "problems": []
+  },
+  {
+    "id": 2,
+    "pageId": 4,
+    "url": "https://www.canva.com/design/DAHWRU-vPW0",
+    "slots": [
+      "Страница 1",
+      "Страница 2",
+      "Страница 3",
+      "Страница 4",
+      "Страница 5",
+      "Страница 6",
+      "Страница 7",
+      "Страница 8"
+    ],
+    "caption_ok": true,
+    "problems": []
+  },
+  {
+    "id": 3,
+    "pageId": 5,
+    "url": "https://www.canva.com/design/DAHWRTHMCJY",
+    "slots": [
+      "Страница 1",
+      "Страница 2",
+      "Страница 3",
+      "Страница 4",
+      "Страница 5",
+      "Страница 6",
+      "Страница 7",
+      "Страница 8"
+    ],
+    "caption_ok": true,
+    "problems": []
+  },
+  {
+    "id": 4,
+    "pageId": 6,
+    "url": "https://www.canva.com/design/DAHWRTwgcw4",
+    "slots": [
+      "Страница 1",
+      "Страница 2",
+      "Страница 3",
+      "Страница 4",
+      "Страница 5",
+      "Страница 6",
+      "Страница 7",
+      "Страница 8"
+    ],
+    "caption_ok": true,
+    "problems": []
+  },
+  {
+    "id": 5,
+    "pageId": 7,
+    "url": "https://www.canva.com/design/DAHWRac2VhI",
+    "slots": [
+      "Страница 1",
+      "Страница 2",
+      "Страница 3",
+      "Страница 4",
+      "Страница 5",
+      "Страница 6",
+      "Страница 7",
+      "Страница 8"
+    ],
+    "caption_ok": true,
+    "problems": []
+  },
+  {
+    "id": 6,
+    "pageId": 8,
+    "url": "https://www.canva.com/design/DAHWRSUWoFk",
+    "slots": [
+      "Страница 1",
+      "Страница 2",
+      "Страница 3",
+      "Страница 4",
+      "Страница 5",
+      "Страница 6",
+      "Страница 7",
+      "Страница 8"
+    ],
+    "caption_ok": true,
+    "problems": []
+  },
+  {
+    "id": 7,
+    "pageId": 9,
+    "url": "https://www.canva.com/design/DAHWRXL8YZY",
+    "slots": [
+      "Страница 1",
+      "Страница 2",
+      "Страница 3",
+      "Страница 4",
+      "Страница 5",
+      "Страница 6",
+      "Страница 7",
+      "Страница 8"
+    ],
+    "caption_ok": true,
+    "problems": []
+  },
+  {
+    "id": 8,
+    "pageId": 10,
+    "url": "https://www.canva.com/design/DAHWRWGDudk",
+    "slots": [
+      "Страница 1",
+      "Страница 2",
+      "Страница 3",
+      "Страница 4",
+      "Страница 5",
+      "Страница 6",
+      "Страница 7",
+      "Страница 8"
+    ],
+    "caption_ok": true,
+    "problems": []
+  },
+  {
+    "id": 9,
+    "pageId": 11,
+    "url": "https://www.canva.com/design/DAHWReBWHXI",
+    "slots": [
+      "Страница 1",
+      "Страница 2",
+      "Страница 3",
+      "Страница 4",
+      "Страница 5",
+      "Страница 6",
+      "Страница 7",
+      "Страница 8"
+    ],
+    "caption_ok": true,
+    "problems": []
+  },
+  {
+    "id": 10,
+    "pageId": 12,
+    "url": "https://www.canva.com/design/DAHWRe4huyg",
+    "slots": [
+      "Страница 1",
+      "Страница 2",
+      "Страница 3",
+      "Страница 4",
+      "Страница 5",
+      "Страница 6",
+      "Страница 7",
+      "Страница 8"
+    ],
+    "caption_ok": true,
+    "problems": []
+  }
+]

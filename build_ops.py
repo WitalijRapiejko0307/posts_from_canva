@@ -6,34 +6,38 @@ from pathlib import Path
 ELEMENT_IDS = [
     "PBXKvc9WHMF2pStF-LBYyfNb2hnYbXzW2",
     "PBbHwq2nRppzN66r-LBM5fsw0CpRzPjDs",
-    "PBPy5QcnWvRjtDtj-LBnjMCpqlxBq8S6R",
-    "PB5wTSCmZCbvlD2s-LBN7sV0vqXBVpMWw",
-    "PBGD7w5fDxNpQmKY-LBYXjTDjVLMJvpMk",
-    "PBqrXVst3Z9MYfKd-LBxdr8sB07F3X8bD",
-    "PBnQ3htq5JjfzRCR-LB6rp2xPKhgDKbVN",
+    "PBxZZxv3hs3WTGkq-LBvRjhJ5KlkV26KS",
+    "PBXLTLM2206zMlnP-LBtWGfT4D61YTwFL",
+    "PBnrMSYLF7rnJYrV-LB0mmGxjSkFF8rH3",
+    "PB7YS5W1p4cPqxkh-LBmqHb6nmzpP32tp",
+    "PB3dJ9KkrsKtBqMV-LBPGrsKNp7CZC4F8",
     "PBnl4PhMp6SZldZc-LBxCqQWqXfvVhZX6",
 ]
 PAGES = [
     {"page_id": "PBXKvc9WHMF2pStF", "page_number": 1, "dimension": {"width": 1080, "height": 1350}, "is_responsive": False, "is_empty": False, "is_editable": True},
     {"page_id": "PBbHwq2nRppzN66r", "page_number": 2, "dimension": {"width": 1080, "height": 1350}, "is_responsive": False, "is_empty": False, "is_editable": True},
-    {"page_id": "PBPy5QcnWvRjtDtj", "page_number": 3, "dimension": {"width": 1080, "height": 1350}, "is_responsive": False, "is_empty": False, "is_editable": True},
-    {"page_id": "PB5wTSCmZCbvlD2s", "page_number": 4, "dimension": {"width": 1080, "height": 1350}, "is_responsive": False, "is_empty": False, "is_editable": True},
-    {"page_id": "PBGD7w5fDxNpQmKY", "page_number": 5, "dimension": {"width": 1080, "height": 1350}, "is_responsive": False, "is_empty": False, "is_editable": True},
-    {"page_id": "PBqrXVst3Z9MYfKd", "page_number": 6, "dimension": {"width": 1080, "height": 1350}, "is_responsive": False, "is_empty": False, "is_editable": True},
-    {"page_id": "PBnQ3htq5JjfzRCR", "page_number": 7, "dimension": {"width": 1080, "height": 1350}, "is_responsive": False, "is_empty": False, "is_editable": True},
+    {"page_id": "PBxZZxv3hs3WTGkq", "page_number": 3, "dimension": {"width": 1080, "height": 1350}, "is_responsive": False, "is_empty": False, "is_editable": True},
+    {"page_id": "PBXLTLM2206zMlnP", "page_number": 4, "dimension": {"width": 1080, "height": 1350}, "is_responsive": False, "is_empty": False, "is_editable": True},
+    {"page_id": "PBnrMSYLF7rnJYrV", "page_number": 5, "dimension": {"width": 1080, "height": 1350}, "is_responsive": False, "is_empty": False, "is_editable": True},
+    {"page_id": "PB7YS5W1p4cPqxkh", "page_number": 6, "dimension": {"width": 1080, "height": 1350}, "is_responsive": False, "is_empty": False, "is_editable": True},
+    {"page_id": "PB3dJ9KkrsKtBqMV", "page_number": 7, "dimension": {"width": 1080, "height": 1350}, "is_responsive": False, "is_empty": False, "is_editable": True},
     {"page_id": "PBnl4PhMp6SZldZc", "page_number": 8, "dimension": {"width": 1080, "height": 1350}, "is_responsive": False, "is_empty": False, "is_editable": True},
 ]
 SLIDE_HEIGHT = 1350
 TEXT_LEFT = 108
 
 
+CAROUSEL_JSON = Path("material/carousel.json")
+DATE_PREFIX = "29.09.26"
+
+
 def text_ops(carousel, cid):
-    ops = [{"type": "update_title", "title": f"15.09.26 - {cid}"}]
+    ops = [{"type": "update_title", "title": f"{DATE_PREFIX} - {cid}"}]
     for i, slide in enumerate(carousel["slides"]):
         eid = ELEMENT_IDS[i]
         ops.append({"type": "replace_text", "element_id": eid, "text": slide["text"]})
         if i >= 1:
-            ops.append({"type": "format_text", "element_id": eid, "formatting": {"font_size": 46, "text_align": "center"}})
+            ops.append({"type": "format_text", "element_id": eid, "formatting": {"font_size": 52, "text_align": "center"}})
     return ops
 
 
@@ -52,7 +56,7 @@ def position_ops(heights):
 def main():
     cid = int(sys.argv[1])
     mode = sys.argv[2]
-    data = json.loads(Path("carousel.json").read_text(encoding="utf-8"))
+    data = json.loads(CAROUSEL_JSON.read_text(encoding="utf-8"))
     carousel = next(c for c in data["carousels"] if c["id"] == cid)
     if mode == "text":
         print(json.dumps(text_ops(carousel, cid), ensure_ascii=False))
