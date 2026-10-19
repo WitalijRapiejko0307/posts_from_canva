@@ -79,17 +79,62 @@ Skip drafts, fragments, poems without a CTA, and blocks without a headline. They
 
 ## 4. Rewrite each post as a carousel
 
-Each post becomes `SLIDE_COUNT` slides. Do not number the slides inside the text (`1.`, `2.`, and similar).
+The parent agent does not rewrite the carousel itself. For each selected post it starts a **Gemini 3 flash** sub-agent, checks the result against the contract below, and writes JSON in steps 5–6.
 
-| Slide | What to write |
-|-------|----------------|
-| 1 | Rewritten hook (caps plus a subtitle on a new line is fine) |
-| 2 … `SLIDE_COUNT` − 1 | Short subtitle plus a paragraph. Keep the meaning; change the wording |
-| `SLIDE_COUNT` | Close the thought and ask to follow `@vitali_rapeika`. The CTA must match the post |
+Each post becomes exactly `SLIDE_COUNT` slides. Do not number the slides inside the text (`1.`, `2.`, and similar).
 
-Match the tone of the current carousel file: direct, concrete, no bureaucratic phrasing.
+| Slide | Contract |
+|-------|----------|
+| 1 | One strong thought, at most **10** words. Caps plus a subtitle on a new line is fine |
+| 2 … `SLIDE_COUNT` − 1 | One thought per slide, at most **40** words. Short subtitle plus a paragraph is fine |
+| `SLIDE_COUNT` | Close the thought, then ask to follow `@vitali_rapeika`. The CTA must match the post. Reason first, then the action |
 
-The Instagram caption is a separate rewritten text, at most **300** characters, and ends with a follow of `@vitali_rapeika`.
+Use only facts from the source post. Do not invent numbers, promises, or events. Tone stays direct and concrete.
+
+The Instagram caption is separate: at most **300** characters, and ends with a follow of `@vitali_rapeika`.
+
+
+### Gemini prompt
+
+Pass the prompt below unchanged, then the source post, `SLIDE_COUNT` from **Parameters**, the account `@vitali_rapeika`, and the plan constraints. Gemini returns only the finished slides plus one caption.
+
+```
+You are an editor of strong social carousels.
+
+1. First-slide text
+Requirements: Up to 10 words. The hook is one strong thought. Options: contrast, an unexpected conclusion, a benefit, a myth, a hidden cause. The hook must stop the scroll and make the reader want to open the second slide. Specifics matter more than pretty phrasing. No clichés, cheap clickbait, or exaggeration. Do not invent facts, numbers, or promises.
+
+2. Text for slides from 2 through the one before the last
+Build a strong carousel on the topic you set in the first slide.
+You already wrote the scroll-stopping hook. A recognizable problem. The main mistake or cause. A non-obvious conclusion that changes the view. A concrete solution.
+An example of how to apply it.
+A CTA that continues the carousel logically (you will write that separately).
+One slide = one strong thought. Each slide should create interest in the next. The text is short, concrete, and easy to read on a phone.
+For each of these slides: up to 40 words.
+Use only the facts provided. If a specific detail is missing, write [need a fact]. Invent nothing.
+
+3. CTA text (last slide)
+Write a CTA for the last slide of the carousel.
+Main takeaway: [what to remember]
+Action: [save / send / write / get the material / go to the product / follow]
+What the person gets: [result or material]
+Requirements: The CTA continues the carousel logically. Reason first, then the action. No pressure, manipulation, or a bare "follow me". No new promises. Short, concrete, natural.
+
+4. Edit the carousel text so it is stronger, sharper, and easier to read.
+Strengthen: Remove repetition, filler, and long lead-ins. Replace abstractions with specifics from the source. Strengthen titles and opening lines.
+One slide = one strong thought. Add contrast when it is already in the text.
+Make the transitions logical. Keep the meaning, the facts, and the style of the original. Return only the finished text, slide by slide.
+```
+
+Append after the prompt. Replace `SLIDE_COUNT` with the number from **Parameters** before sending.
+
+```
+Plan constraints:
+- Return exactly SLIDE_COUNT slides. Slide 1 is the hook. The last slide is the CTA.
+- The last slide must ask to follow @vitali_rapeika. Keep the reason-then-action shape from section 3.
+- Also return one Instagram caption, at most 300 characters, ending with a follow of @vitali_rapeika. The caption is not a slide.
+- Do not number slides inside the text.
+```
 
 ---
 
@@ -164,7 +209,11 @@ Check after Docs saves (`read_file_content` again):
 
 - [ ] Exactly one `🟢 STOP 🟢`
 - [ ] `POST_COUNT` complete posts taken from above the marker
+- [ ] Each carousel was rewritten by the Gemini sub-agent with the prompt in step 4
 - [ ] Each carousel has `SLIDE_COUNT` slides and no item numbering in the text
+- [ ] Slide 1 is at most 10 words; slides 2 … `SLIDE_COUNT` − 1 are at most 40 words each
+- [ ] No slide contains `[need a fact]`
+- [ ] Facts in the slides are present in the source post
 - [ ] The last slide asks to follow `@vitali_rapeika`
 - [ ] `material/carousel.json` contains only this batch (previous entries removed)
 - [ ] `material/description.json` has `POST_COUNT` texts, each ≤ 300 characters, ids match
@@ -182,6 +231,7 @@ Next: [`plan-sozdaniya-karuseli.md`](plan-sozdaniya-karuseli.md) — Canva copie
 | Read the document | `read_file_content` (`plugin-google-drive-google-drive`) |
 | Find, cut, or insert the marker | `press_key`, `fill`, `type_text` (`user-chrome-devtools`) |
 | Check how the marker looks | `take_screenshot` |
+| Rewrite each post | Gemini sub-agent with the prompt in step 4 |
 | Write texts | edit `material/carousel.json` and `material/description.json` |
 
 ---
