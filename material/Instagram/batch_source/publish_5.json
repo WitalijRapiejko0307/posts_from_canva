@@ -1,0 +1,8 @@
+{
+  "id": 5,
+  "pageId": 5,
+  "slots": 9,
+  "caption_ok": true,
+  "publish_clicked": true,
+  "notes": "Account vitali_rapeika; Format=Post; added pages 2-9 via Добавить изображение → Выберите страницу → Страница N without waiting for loads; type_text corrupted Cyrillic (238 chars: ценность→ценност, опора→опор, vitali_rapeika→vitali_rapika); fixed with evaluate_script insertText to exact 241-char caption from caption_5.txt; clicked Опубликовать; dialog «Публикация вашего контента...» shown; did not wait for finish."
+}

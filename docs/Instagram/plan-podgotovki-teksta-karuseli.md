@@ -2,7 +2,7 @@
 
 **Document date:** 02.10.26
 
-Repeatable cycle: take the next batch of posts above the stop marker, rewrite each as a carousel, write the JSON files, and move the marker. The next stage is [`plan-sozdaniya-karuseli.md`](plan-sozdaniya-karuseli.md).
+Repeatable cycle: take the next batch of posts above the stop marker, rewrite each as a carousel, write the JSON files, move the marker, then create the Canva copies. **Carousels created — STOP.** Instagram prep and Publish are [`plan-sozdaniya-karuseli.md`](plan-sozdaniya-karuseli.md).
 
 Set **Parameters** before the cycle. Everything else in **Fixed inputs** stays the same from run to run.
 
@@ -29,8 +29,8 @@ Fill this table at the start of the cycle. Do not assume defaults from a previou
 | Marker | `🟢 STOP 🟢` |
 | Account in the CTA | `@vitali_rapeika` |
 | Caption length | at most **300** characters |
-| Slide text | [`material/carousel.json`](../material/carousel.json) |
-| Captions | [`material/description.json`](../material/description.json) |
+| Slide text | [`material/Instagram/carousel.json`](../../material/Instagram/carousel.json) |
+| Captions | [`material/Instagram/description.json`](../../material/Instagram/description.json) |
 
 **Post shape in the document:** hook headline → body → call to action (subscribe, comment, or save, usually including `@vitali_rapeika`).
 
@@ -79,7 +79,9 @@ Skip drafts, fragments, poems without a CTA, and blocks without a headline. They
 
 ## 4. Rewrite each post as a carousel
 
-The parent agent does not rewrite the carousel itself. For each selected post it starts a **Gemini 3 flash** sub-agent, checks the result against the contract below, and writes JSON in steps 5–6.
+The parent agent does not rewrite the carousel itself. Text uniqualization uses **Gemini 3 Flash** sub-agents. For each selected post the parent starts one **Gemini 3 Flash** sub-agent, checks the result against the contract below, and writes JSON in steps 5–6.
+
+Every instruction to a sub-agent must include the scope block in **Plan constraints** below. The sub-agent rewrites only the source post in that message. It does not read chat history, previous cycles, other files in the repo, or any other plan.
 
 Each post becomes exactly `SLIDE_COUNT` slides. Do not number the slides inside the text (`1.`, `2.`, and similar).
 
@@ -134,13 +136,14 @@ Plan constraints:
 - The last slide must ask to follow @vitali_rapeika. Keep the reason-then-action shape from section 3.
 - Also return one Instagram caption, at most 300 characters, ending with a follow of @vitali_rapeika. The caption is not a slide.
 - Do not number slides inside the text.
+- Scope: do only this rewrite. Do not study the history of previous iterations, earlier chats, or earlier batches. Do not open or follow any other plan, including plan-sozdaniya-karuseli.md. Do not search the repo, Canva, or the browser. Return the slides and the caption. Do not publish.
 ```
 
 ---
 
 ## 5. Write slides to `carousel.json`
 
-1. Open [`material/carousel.json`](../material/carousel.json).
+1. Open [`material/Instagram/carousel.json`](../../material/Instagram/carousel.json).
 2. **Delete every current entry** in the `carousels` array.
 3. Write this cycle’s carousels in the same structure:
 
@@ -167,7 +170,7 @@ Plan constraints:
 
 ## 6. Write captions to `description.json`
 
-1. Open [`material/description.json`](../material/description.json).
+1. Open [`material/Instagram/description.json`](../../material/Instagram/description.json).
 2. **Delete every current entry** in the `descriptions` array.
 3. Write this cycle’s captions in the same structure:
 
@@ -205,21 +208,79 @@ Check after Docs saves (`read_file_content` again):
 
 ---
 
-## 8. Checks before the next stage
+## 8. Create the designs in Canva
+
+Text for this cycle is already in `material/Instagram/carousel.json`. Build the designs here. The next plan only prepares the Instagram post and clicks **Publish**.
+
+**Sub-agents:** design creation uses **Composer 2.5**. Give each sub-agent clear instructions: source design id, copy name, carousel `id`, the exact slide strings, font, and centering rules below. **One carousel = one sub-agent.** The parent checks the saved design URL and does not edit Canva itself.
+
+Put this scope in every Composer instruction, unchanged:
+
+```
+Scope: do only this one carousel copy. Do not study the history of previous iterations, earlier chats, or earlier batches. Do not open or follow any other plan, including plan-sozdaniya-karuseli.md. Do not search the repo for other workflows. Do not open Share, fill a caption, or click Publish. Return the saved design URL.
+```
+
+### Source
+
+Take the **latest carousel design in Canva** (one source for the whole batch):
+
+1. Open Canva through MCP.
+2. `search-designs` with `sort_by: modified_descending` and `limit: 3–5`.
+3. Pick the most recently modified design that has **`SLIDE_COUNT` slides**.
+
+### Copy, text, save
+
+For each carousel `id` from 1 through `POST_COUNT`, the Composer 2.5 sub-agent:
+
+1. `copy-design` from that latest source. Name: `{source title} {today}` with date **DD.MM.YY**. The original stays unchanged.
+2. `start-editing-transaction` on the copy. Keep `transaction_id` and the `pages` array.
+3. Read slide strings from `material/Instagram/carousel.json` for this `id`. `perform-editing-operations`:
+
+| Slide | Action |
+|-------|--------|
+| 1 | `replace_text` — hook where `slide_number` is 1 |
+| 2 … `SLIDE_COUNT` | `replace_text` — that slide’s `text` |
+| 2 … `SLIDE_COUNT` | `format_text` — `font_size: 52`, `text_align: center` |
+
+Batch operations when one request is too large.
+
+4. Center text blocks on slides 2 … `SLIDE_COUNT`. After the replace, take the text-block **height** from the API response (`dimension.height`).
+   - **Horizontal:** `left = (1080 - 864) / 2 = 108` (block width 864 px).
+   - **Vertical:** `top = (1350 - height) / 2` (slide 1080 × 1350 px).
+   - `position_element` for every slide from 2 through `SLIDE_COUNT`.
+5. `commit-editing-transaction` with the same `transaction_id`. Keep `edit_url`.
+
+### Open every carousel in Chrome
+
+After every copy is saved, open **each** finished carousel — one tab per design URL **without** `/edit`.
+
+- If the API returned `edit_url` like `https://www.canva.com/design/{id}/edit`, drop `/edit` and open `https://www.canva.com/design/{id}`. A link with `/edit` on the id returns **404**.
+- MCP `user-chrome-devtools`: `list_pages`, then `new_page` for each URL.
+- Expectation: the Canva session is already logged in.
+
+**Carousels created — STOP.** Do not open Share, do not fill captions, do not click Publish. That is [`plan-sozdaniya-karuseli.md`](plan-sozdaniya-karuseli.md).
+
+---
+
+## 9. Checks before STOP
 
 - [ ] Exactly one `🟢 STOP 🟢`
 - [ ] `POST_COUNT` complete posts taken from above the marker
-- [ ] Each carousel was rewritten by the Gemini sub-agent with the prompt in step 4
+- [ ] Each carousel was rewritten by a **Gemini 3 Flash** sub-agent with the prompt in step 4
 - [ ] Each carousel has `SLIDE_COUNT` slides and no item numbering in the text
 - [ ] Slide 1 is at most 10 words; slides 2 … `SLIDE_COUNT` − 1 are at most 40 words each
 - [ ] No slide contains `[need a fact]`
 - [ ] Facts in the slides are present in the source post
 - [ ] The last slide asks to follow `@vitali_rapeika`
-- [ ] `material/carousel.json` contains only this batch (previous entries removed)
-- [ ] `material/description.json` has `POST_COUNT` texts, each ≤ 300 characters, ids match
+- [ ] `material/Instagram/carousel.json` contains only this batch (previous entries removed)
+- [ ] `material/Instagram/description.json` has `POST_COUNT` texts, each ≤ 300 characters, ids match
 - [ ] The marker moved up by this batch, and the paragraph before the first post is clean
-
-Next: [`plan-sozdaniya-karuseli.md`](plan-sozdaniya-karuseli.md) — Canva copies, text on slides, Instagram prep **without publishing**.
+- [ ] Source is the latest Canva carousel with `SLIDE_COUNT` slides
+- [ ] `POST_COUNT` copies exist, each built by its own **Composer 2.5** sub-agent
+- [ ] Slide 1 matches the JSON; slides 2 … `SLIDE_COUNT` are full text, font **52**, centered
+- [ ] Each copy is named with today’s date **DD.MM.YY** and saved
+- [ ] Every carousel is open in a Chrome tab (URL without `/edit`)
+- [ ] **STOP** — Share and Publish were not started
 
 ---
 
@@ -231,8 +292,12 @@ Next: [`plan-sozdaniya-karuseli.md`](plan-sozdaniya-karuseli.md) — Canva copie
 | Read the document | `read_file_content` (`plugin-google-drive-google-drive`) |
 | Find, cut, or insert the marker | `press_key`, `fill`, `type_text` (`user-chrome-devtools`) |
 | Check how the marker looks | `take_screenshot` |
-| Rewrite each post | Gemini sub-agent with the prompt in step 4 |
-| Write texts | edit `material/carousel.json` and `material/description.json` |
+| Rewrite each post | **Gemini 3 Flash** sub-agent, one per post, prompt in step 4 |
+| Write texts | edit `material/Instagram/carousel.json` and `material/Instagram/description.json` |
+| Find the latest carousel | `search-designs` (`modified_descending`) |
+| Create one carousel | **Composer 2.5** sub-agent, one per carousel, with clear instructions |
+| Copy, edit, save | `copy-design`, `start-editing-transaction`, `perform-editing-operations`, `commit-editing-transaction` |
+| Open carousels | `list_pages`, `new_page` (`user-chrome-devtools`) |
 
 ---
 

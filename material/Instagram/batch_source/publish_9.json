@@ -1,0 +1,8 @@
+{
+  "id": 9,
+  "pageId": 10,
+  "slots": 9,
+  "caption_ok": true,
+  "publish_clicked": true,
+  "notes": "Account vitali_rapeika; Format=Post; added pages 2-9 via Добавить изображение → Выберите страницу → Страница N without waiting for loads (page 9 via evaluate_script due to a11y uid collision with Caption); type_text dropped Cyrillic (молися/влюблённсть/иподпишись); insertText fix restored exact 192-char caption from caption_9.txt; clicked Опубликовать; dialog «Публикация вашего контента...» shown; did not wait for finish."
+}
